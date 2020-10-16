@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>ORDER CAR</h1>
+    <form method="POST" action="/formhandling">
+
+        <label class="label">FIRST NAME:</label>
+        <input type="text" name="first_name">
+        <br>
+
+        <label>LAST NAME:</label>
+        <input type="text" name="last_name">
+        <br>
+
+        <label>BIRTHDAY:</label>
+        <input type="date" name="birthday">
+        <br>
+
+        <label>GENDER:
+            <label>Male</label>
+            <input type="radio" name="gender" value="male">
+            <label>Female</label>
+            <input type="radio" name="gender" value="female">
+        </label>
+        <br>
+
+        <label>PAYMENT:
+            <label>Card</label>
+            <input type="checkbox" name="card" value="card">
+            <label>Cash</label>
+            <input type="checkbox" name="cash" value="cash">
+        </label>
+        <br>
+
+        <label>EMAIL:</label>
+        <input type="email" name="email">
+        <br>
+
+        <label>PHONE:</label>
+        <input type="text" name="phone">
+        <br>
+
+        <select name="subject">
+            <option disabled="disabled" selected="selected">Choose car</option>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Volvo</option>
+        </select>
+        <br>
+
+        <button class="btn btn-primary" type="submit">submit</button>
+    </form>
+</div>
+</body>
